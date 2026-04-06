@@ -52,9 +52,19 @@ const statObserver = new IntersectionObserver(entries => {
       statObserver.unobserve(e.target);
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.1 });
 
-document.querySelectorAll('.stat-num[data-target]').forEach(el => statObserver.observe(el));
+document.querySelectorAll('.stat-n[data-target]').forEach(el => statObserver.observe(el));
+
+// Also trigger immediately if already visible
+setTimeout(() => {
+  document.querySelectorAll('.stat-n[data-target]').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      animateCounter(el);
+    }
+  });
+}, 800);
 
 // ── Contact form → WhatsApp
 function handleSubmit(e) {
