@@ -160,7 +160,7 @@ nav {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 120px 5% 80px;
+  padding: 120px 5% 60px;
   overflow: hidden;
 }
 
@@ -226,9 +226,9 @@ nav {
 
 .hero-title {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2.8rem, 6.5vw, 5.2rem);
+  font-size: clamp(1.9rem, 3.5vw, 3.2rem);
   font-weight: 800;
-  line-height: 1.02;
+  line-height: 1.08;
   letter-spacing: -2px;
   color: #fff;
   margin-bottom: 10px;
