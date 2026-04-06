@@ -226,10 +226,10 @@ nav {
 
 .hero-title {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(1.9rem, 3.5vw, 3.2rem);
+  font-size: clamp(1.6rem, 2.8vw, 2.8rem);
   font-weight: 800;
   line-height: 1.08;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   color: #fff;
   margin-bottom: 10px;
   animation: fadeUp 0.7s 0.1s ease both;
